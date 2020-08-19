@@ -126,9 +126,9 @@ header .container .menu a:hover{
     padding: 60px 0;
 }
 
-.main .projects .container{
-    /* overflow: hidden; */
-}
+/* .main .projects .container{
+    overflow: hidden;
+} */
 
 .main .projects div.container .title{
     font-size: 36px;
@@ -288,5 +288,43 @@ footer .social-networks .github:hover{
 footer .social-networks .instagram:hover{
     background:#405de6;
 }
+@media screen and (max-width:800px){
+    .main .projects div.container div.projects-containers .project{
+        width:30%;
+        margin-bottom: 40px;
+    }
+}
+@media screen and (max-width:650px){
+    .main .projects div.container div.projects-containers .project{
+        width:45%;
+        margin-bottom: 40px;
+    }
+}
 
+@media screen and (max-width:550px){
+    .main .projects div.container div.projects-containers .project{
+        width:100%;
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (max-width:450px){
+/* 
+    header .container{
+        margin: 0;
+        margin-left: 40px;
+        width: 100%;
+    } */
+    header .container .menu ul{
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+    }
+    footer .contact .form input[type="text"],
+    footer .contact .form input[type="email"]{
+        width:100%;
+        margin-bottom: 15px;
+    }
+    
+}
 
