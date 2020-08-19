@@ -309,17 +309,20 @@ footer .social-networks .instagram:hover{
 }
 
 @media screen and (max-width:450px){
-/* 
-    header .container{
-        margin: 0;
-        margin-left: 40px;
-        width: 100%;
-    } */
+
+    header .container .menu{
+        margin-left: 18px;
+    }
     header .container .menu ul{
         display: flex;
         flex-flow: row nowrap;
         align-items: center;
     }
+
+    header .container .text-container .text h1{
+        font-size: 40px;
+    }
+
     footer .contact .form input[type="text"],
     footer .contact .form input[type="email"]{
         width:100%;
