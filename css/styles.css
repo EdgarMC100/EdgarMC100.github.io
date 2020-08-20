@@ -178,7 +178,7 @@ div.fa-heart{
 }
 
 .main .projects div.container div.projects-containers .project{
-    width:23%;
+    width:35%;
     margin-bottom: 40px;
 }
 
@@ -195,6 +195,7 @@ div.fa-heart{
 }
 .main .projects div.container div.projects-containers .project .description{
     text-align: center;
+
 }
 
 .main .projects div.container div.projects-containers .project .description .logo-container .react{
@@ -217,6 +218,11 @@ div.fa-heart{
 
 .main .projects div.container div.projects-containers .project .description .logo-container img.react-native{
     width: 30%;
+}
+.main .projects div.container div.projects-containers .project .description a{
+    /* text-decoration: none; */
+    text-decoration: underline;
+    color:#3895ea;
 }
 .main .projects div.container div.projects-containers .project .name{
     font-weight: 700;
