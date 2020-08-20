@@ -40,7 +40,7 @@ header .container .menu a{
     padding-bottom: 9px;
     font-size: 1em;
 }
-
+/* H    E   A   D   E   R */
 header .container .menu a:hover{
     border-bottom: 1px solid white;
 }
@@ -82,6 +82,7 @@ header .container .menu a:hover{
     overflow: visible;
 }
 
+/* M    A   I   N*/
 .main .about{
     text-align: center;
     /* background:#ccc; */
@@ -115,6 +116,36 @@ header .container .menu a:hover{
     color:#dd820d;
     text-align:center;
 }
+div.fa-heart{
+    font-size: 300px;
+    position: absolute;
+    transform: translateX(-55px);
+    color: black;
+
+}
+.main .about .container .tech-container{
+    width: 80%;
+    /* background-color: blueviolet; */
+    height: 300px;
+    margin:40px auto 60px auto;
+}
+.main .about .container .tech-container span.js{
+    background:black;
+    display: inline-block;
+    height: 3.5em;
+    border-radius: 5px;
+    margin: 20px;
+    transform: translateY(100px);
+    
+}
+.main .about .container .tech-container span.js i{
+    font-size: 10em;
+    color: rgb(247, 223, 30);
+    display: inline-block;
+    transform: translate(5px,-60px); 
+
+}
+
 
 .main .about div.text .bold{
     color: #3895ea;
@@ -165,6 +196,28 @@ header .container .menu a:hover{
 .main .projects div.container div.projects-containers .project .description{
     text-align: center;
 }
+
+.main .projects div.container div.projects-containers .project .description .logo-container .react{
+    /* background: rgb(32, 35, 42); */
+    color: rgb(21, 170, 191);
+    font-size: 40px;
+}
+.main .projects div.container div.projects-containers .project .description .logo-container span{
+    padding: 10px;
+}
+
+
+
+.main .projects div.container div.projects-containers .project .description .logo-container span .firebase{
+    width: 15%;
+}
+.main .projects div.container div.projects-containers .project .description .logo-container span .travisCI{
+    width: 20%;
+}
+
+.main .projects div.container div.projects-containers .project .description .logo-container img.react-native{
+    width: 30%;
+}
 .main .projects div.container div.projects-containers .project .name{
     font-weight: 700;
     color:#3895ea;
@@ -176,6 +229,7 @@ header .container .menu a:hover{
     color:#636363;
 }
 
+/* F    O   O   T   E   R */
 footer .contact{
     padding: 60px 0;
 }
@@ -299,12 +353,22 @@ footer .social-networks .instagram:hover{
         width:45%;
         margin-bottom: 40px;
     }
+    .main .projects div.container div.projects-containers .project .description .logo-container .react{
+        /* background: rgb(32, 35, 42); */
+        color: rgb(21, 170, 191);
+        font-size: 60px;
+    }
 }
 
 @media screen and (max-width:550px){
     .main .projects div.container div.projects-containers .project{
         width:100%;
         margin-bottom: 40px;
+    }
+    .main .projects div.container div.projects-containers .project .description .logo-container .react{
+        /* background: rgb(32, 35, 42); */
+        color: rgb(21, 170, 191);
+        font-size: 95px;
     }
 }
 
@@ -327,6 +391,23 @@ footer .social-networks .instagram:hover{
     footer .contact .form input[type="email"]{
         width:100%;
         margin-bottom: 15px;
+    }
+
+    footer .contact .container .form{
+        width: 100%;
+        padding: 0;
+    }
+
+    footer .social-networks .container{
+        width: 100%;
+        flex-wrap: wrap;
+        /* padding: 10px 0; */
+    }
+
+    .main .projects div.container div.projects-containers .project .description .logo-container .react{
+        /* background: rgb(32, 35, 42); */
+        color: rgb(21, 170, 191);
+        font-size: 95px;
     }
     
 }
