@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: white;
+}
+body div.container {
+  background-color: #14cc60;
+  max-width: 500px;
+  width: 400px;
+  margin: 20px auto;
+}
+body div.container form {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  height: 50vh;
+  width: 50%;
+}
+body div.container form input {
+  border: 1px solid 27fb6b;
+  margin: 5px;
+  height: 50px;
+  width: 200px;
+  padding: 5px;
+  text-align: center;
+}
+body div.container form button {
+  width: 100px;
+  height: 25px;
+}
+
+/*# sourceMappingURL=form.css.map */

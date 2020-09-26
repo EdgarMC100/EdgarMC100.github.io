@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="../css/form.css">
+</head>
+<body>
+   <div class="container">
+       <form action="">
+           <input type="text" id="operando1" placeholder="Opeando 1">
+           <p>+</p>
+           <input type="text" id="operando2" placeholder="Operando 2">
+           <input type="text" id="result" placeholder="Result" readonly>
+           <button onclick="sum()">Add</button>
+       </form>
+   </div> 
+   <script>
+       function sum() {
+           event.preventDefault();
+           let op1 = parseFloat(document.getElementById("operando1").value);
+           let op2 = parseFloat(document.getElementById("operando2").value);
+           let result = op1 + op2;
+           let resultElement = document.getElementById("result");
+           resultElement.value = result;
+        //    event.preventDefault()
+       }
+   </script>
+</body>
+</html>
