@@ -5,12 +5,41 @@
     <meta lang="en">
     <meta name="viewport" content="width=device-width, user-scalable=no, 
     initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"> 
-    <link rel="stylesheet" href="/css/normalize.css">
-    <link rel="stylesheet" href="/css/styles.css">
-    <link rel="stylesheet" href="/assets/css/all.min.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./assets/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,600&display=swap" rel="stylesheet"> 
     <script src="./js/index.js" defer></script>
     <title>Portafolio</title>
+    <!-- Start of Async Drift Code -->
+<script>
+    "use strict";
+    
+    !function() {
+      var t = window.driftt = window.drift = window.driftt || [];
+      if (!t.init) {
+        if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
+        t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
+        t.factory = function(e) {
+          return function() {
+            var n = Array.prototype.slice.call(arguments);
+            return n.unshift(e), t.push(n), t;
+          };
+        }, t.methods.forEach(function(e) {
+          t[e] = t.factory(e);
+        }), t.load = function(t) {
+          var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
+          o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
+          var i = document.getElementsByTagName("script")[0];
+          i.parentNode.insertBefore(o, i);
+        };
+      }
+    }();
+    drift.SNIPPET_VERSION = '0.3.1';
+    drift.load('wt9h8ccgtk7x');
+    </script>
+    <!-- End of Async Drift Code -->
+    
 </head>
 <body>
     <header>
@@ -34,7 +63,7 @@
         <section class="about">
             <div class="container">
                 <div class="photo">
-                    <img src="/assets/images/Me/me2.jpg" alt="">
+                    <img src="./assets/images/Me/me2.jpg" alt="">
                 </div>
                 <div class="text">
                     <h3 class="title">About</h3>
@@ -59,7 +88,7 @@
                     <!-- <div class="projects"> -->
                         <div class="project">
                             <div class="thumb">
-                                <img id="first" src="/assets/images/Projects/cv3.png" alt="">
+                                <img id="first" src="./assets/images/Projects/cv3.png" alt="">
                             </div>
                             <div class="description">
                                 <p class="name"><a href="https://edgarmc100.github.io/Portafolio/">CV</a></p>
@@ -67,13 +96,13 @@
                                 <div class="logo-container">
                                     <span class="react"><i style="font-size: 2em;"class="fab fa-react"></i></span>
                                     <span ><img class="firebase" src="https://cdn.worldvectorlogo.com/logos/firebase-1.svg" alt=""></span>
-                                    <span ><img class="travisCI" src="assets/images/logos/TravisFace.png" alt=""></span>
+                                    <span ><img class="travisCI" src=".assets/images/logos/TravisFace.png" alt=""></span>
                                 </div>
                             </div>
                         </div>
                         <div class="project">
                             <div class="thumb">
-                                <img id="second" src="/assets/images/Projects/credi-movil.png" alt="">
+                                <img id="second" src="./assets/images/Projects/credi-movil.png" alt="">
                             </div>
                             <div class="description">
                                 <p class="name"><a href="https://play.google.com/store/apps/details?id=mx.com.credicapital.bancamovil&hl=en_SG">CrediCapital</a></p>
@@ -84,15 +113,15 @@
                         </div>
                         <div class="project">
                             <div class="thumb">
-                                <img id="third" src="/assets/images/Projects/spa1.jpg" alt="">
+                                <img id="third" src="./assets/images/Projects/spa1.jpg" alt="">
                             </div>
                             <div class="description">
                                 <p class="name"><a href="https://edgarmc100.github.io/restaurant-spa/">The national restaurant</a></p>
                                 <div class="logo-container">
-                                    <img class="react-native"src="/assets/images/logos/html5.png" alt="">
-                                    <img class="react-native"src="/assets/images/logos/css.png" style="width: 75px;" alt="">
-                                    <img class="react-native"src="/assets/images/logos/javascript.png" style="width: 105px;" alt="">
-                                    <img class="react-native"src="/assets/images/logos/sass.png" style="width: 105px;" alt="">
+                                    <img class="react-native"src="./assets/images/logos/html5.png" alt="">
+                                    <img class="react-native"src="./assets/images/logos/css.png" style="width: 75px;" alt="">
+                                    <img class="react-native"src="./assets/images/logos/javascript.png" style="width: 105px;" alt="">
+                                    <img class="react-native"src="./assets/images/logos/sass.png" style="width: 105px;" alt="">
                                 </div>
                             </div>
                         </div>
