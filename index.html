@@ -1,212 +1,284 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta lang="en">
-    <meta name="viewport" content="width=device-width, user-scalable=no, 
-    initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"> 
-    <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="./assets/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,600&display=swap" rel="stylesheet"> 
+  <head>
+    <meta charset="UTF-8" />
+    <meta lang="en" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, 
+    initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/all.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,600&display=swap"
+      rel="stylesheet"
+    />
     <script src="./js/index.js" defer></script>
     <title>Portafolio</title>
     <!-- Start of Async Drift Code -->
-<script>
-    "use strict";
-    
-    !function() {
-      var t = window.driftt = window.drift = window.driftt || [];
-      if (!t.init) {
-        if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
-        t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
-        t.factory = function(e) {
-          return function() {
-            var n = Array.prototype.slice.call(arguments);
-            return n.unshift(e), t.push(n), t;
-          };
-        }, t.methods.forEach(function(e) {
-          t[e] = t.factory(e);
-        }), t.load = function(t) {
-          var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
-          o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
-          var i = document.getElementsByTagName("script")[0];
-          i.parentNode.insertBefore(o, i);
-        };
-      }
-    }();
-    drift.SNIPPET_VERSION = '0.3.1';
-    drift.load('wt9h8ccgtk7x');
+    <script>
+      "use strict";
+
+      !(function () {
+        var t = (window.driftt = window.drift = window.driftt || []);
+        if (!t.init) {
+          if (t.invoked)
+            return void (
+              window.console &&
+              console.error &&
+              console.error("Drift snippet included twice.")
+            );
+          (t.invoked = !0),
+            (t.methods = [
+              "identify",
+              "config",
+              "track",
+              "reset",
+              "debug",
+              "show",
+              "ping",
+              "page",
+              "hide",
+              "off",
+              "on",
+            ]),
+            (t.factory = function (e) {
+              return function () {
+                var n = Array.prototype.slice.call(arguments);
+                return n.unshift(e), t.push(n), t;
+              };
+            }),
+            t.methods.forEach(function (e) {
+              t[e] = t.factory(e);
+            }),
+            (t.load = function (t) {
+              var e = 3e5,
+                n = Math.ceil(new Date() / e) * e,
+                o = document.createElement("script");
+              (o.type = "text/javascript"),
+                (o.async = !0),
+                (o.crossorigin = "anonymous"),
+                (o.src =
+                  "https://js.driftt.com/include/" + n + "/" + t + ".js");
+              var i = document.getElementsByTagName("script")[0];
+              i.parentNode.insertBefore(o, i);
+            });
+        }
+      })();
+      drift.SNIPPET_VERSION = "0.3.1";
+      drift.load("wt9h8ccgtk7x");
     </script>
     <!-- End of Async Drift Code -->
-    
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div class="container">
-            <nav class="menu">
-                <ul>
-                    <a href="#">Home</a>
-                    <a href="#projects">Projects</a>
-                    <a href="#contact">Contact</a>
-                </ul>
-            </nav>
-            <div class="text-container">
-                <div class="text">
-                    <h1 class="name">Edgar Cortés</h1>
-                    <h2 class="profession">Web Developer</h2>
-                </div>
-            </div>
+      <div class="container">
+        <nav class="menu">
+          <ul>
+            <a href="#">Home</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+          </ul>
+        </nav>
+        <div class="text-container">
+          <div class="text">
+            <h1 class="name">Edgar Cortés</h1>
+            <h2 class="profession">Web Developer</h2>
+          </div>
         </div>
+      </div>
     </header>
     <section class="main">
-        <section class="about">
-            <div class="container">
-                <div class="photo">
-                    <img src="./assets/images/Me/me2.jpg" alt="">
+      <section class="about">
+        <div class="container">
+          <div class="photo">
+            <img src="./assets/images/Me/me2.jpg" alt="" />
+          </div>
+          <div class="text">
+            <h3 class="title">About</h3>
+            <p>
+              I'm <span class="bold">software engineer</span> who is passionate
+              about making open-source more accessible, creating technology to
+              elevate people, and building community. Some technologies
+              <span class="bold"
+                >I enjoy working with include ReactJS, Jamstack (JavaScript,
+                APIs + Markup) and GraphQL</span
+              >.
+            </p>
+          </div>
+          <div class="tech-container">
+            <div class="fas fa-heart"></div>
+            <span class="js"><i class="fab fa-js-square"></i></span>
+          </div>
+        </div>
+      </section>
+      <section class="projects" id="projects">
+        <div class="container">
+          <h3 class="title">Projects</h3>
+          <div class="projects-containers">
+            <!-- <div class="projects"> -->
+            <div class="project">
+              <div class="thumb">
+                <img id="first" src="./assets/images/Projects/cv3.png" alt="" />
+              </div>
+              <div class="description">
+                <p class="name">
+                  <a href="https://edgarmc100.github.io/Portafolio/">CV</a>
+                </p>
+                <!-- <p class="tech">React - Firebase Cloud Function and DB</p> -->
+                <div class="logo-container">
+                  <span class="react"
+                    ><i style="font-size: 2em" class="fab fa-react"></i
+                  ></span>
+                  <span
+                    ><img
+                      class="firebase"
+                      src="https://cdn.worldvectorlogo.com/logos/firebase-1.svg"
+                      alt=""
+                  /></span>
+                  <span
+                    ><img
+                      class="travisCI"
+                      src=".assets/images/logos/TravisFace.png"
+                      alt=""
+                  /></span>
                 </div>
-                <div class="text">
-                    <h3 class="title">About</h3>
-                    <p>I'm <span class="bold">software engineer</span> who is passionate about making open-source more accessible, creating technology to elevate people, and building community. Some technologies <span class="bold">I enjoy working with include ReactJS, Jamstack (JavaScript, APIs + Markup) and GraphQL</span>.</p>
-                </div>
-                <div class="tech-container">
-                    <div class="fas fa-heart">
-                    </div>
-                    <span class="js"><i class="fab fa-js-square"></i></span>
-                    <!-- <span class="js"><i class="fab fa-js-square"></i></span>  
-                    <span class="js"><i class="fab fa-js-square"></i></span>  
-                    <span class="js"><i class="fab fa-js-square"></i></span>     -->
-                    <!-- <span class="react"><i class="fab fa-js-square"></i></span> -->
-                </div>
-                
+              </div>
             </div>
-        </section>
-        <section class="projects" id="projects">
-            <div class="container">
-                <h3 class="title">Projects</h3>
-                <div class="projects-containers">
-                    <!-- <div class="projects"> -->
-                        <div class="project">
-                            <div class="thumb">
-                                <img id="first" src="./assets/images/Projects/cv3.png" alt="">
-                            </div>
-                            <div class="description">
-                                <p class="name"><a href="https://edgarmc100.github.io/Portafolio/">CV</a></p>
-                                <!-- <p class="tech">React - Firebase Cloud Function and DB</p> -->
-                                <div class="logo-container">
-                                    <span class="react"><i style="font-size: 2em;"class="fab fa-react"></i></span>
-                                    <span ><img class="firebase" src="https://cdn.worldvectorlogo.com/logos/firebase-1.svg" alt=""></span>
-                                    <span ><img class="travisCI" src=".assets/images/logos/TravisFace.png" alt=""></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project">
-                            <div class="thumb">
-                                <img id="second" src="./assets/images/Projects/credi-movil.png" alt="">
-                            </div>
-                            <div class="description">
-                                <p class="name"><a href="https://play.google.com/store/apps/details?id=mx.com.credicapital.bancamovil&hl=en_SG">CrediCapital</a></p>
-                                <div class="logo-container">
-                                    <span class="react"><i style="font-size: 2em;"class="fab fa-react"></i></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project">
-                            <div class="thumb">
-                                <img id="third" src="./assets/images/Projects/spa1.jpg" alt="">
-                            </div>
-                            <div class="description">
-                                <p class="name"><a href="https://edgarmc100.github.io/restaurant-spa/">The national restaurant</a></p>
-                                <div class="logo-container">
-                                    <img class="react-native"src="./assets/images/logos/html5.png" alt="">
-                                    <img class="react-native"src="./assets/images/logos/css.png" style="width: 75px;" alt="">
-                                    <img class="react-native"src="./assets/images/logos/javascript.png" style="width: 105px;" alt="">
-                                    <img class="react-native"src="./assets/images/logos/sass.png" style="width: 105px;" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        <!-- <div class="project">
-                            <div class="thumb">
-                                <img src="/assets/images/Projects/3.jpg" alt="">
-                            </div>
-                            <div class="description">
-                                <p class="name">Rost</p>
-                                <p class="tech">Svelte</p>
-                            </div>
-                        </div>
-                        <div class="project">
-                            <div class="thumb">
-                                <img src="/assets/images/Projects/4.jpg" alt="">
-                            </div>
-                            <div class="description">
-                                <p class="name">HugoBoss</p>
-                                <p class="tech">React</p>
-                            </div>
-                        </div>
-                        <div class="project">
-                            <div class="thumb">
-                                <img src="/assets/images/Projects/5.jpg" alt="">
-                            </div>
-                            <div class="description">
-                                <p  class="name">Maletas y Mochilas</p>
-                                <p class="tech">Angular</p>
-                            </div>
-                        </div>
-                        <div class="project">
-                            <div class="thumb">
-                                <img src="/assets/images/Projects/6.jpg" alt="">
-                            </div>
-                            <div class="description">
-                                <p class="name">Delta</p>
-                                <p class="tech">Svelte</p>
-                            </div>
-                        </div>
-                        <div class="project">
-                            <div class="thumb">
-                                <img src="/assets/images/Projects/7.jpg" alt="">
-                            </div>
-                            <div class="description">
-                                <p class="name">Resort</p>
-                                <p class="tech">Django</p>
-                            </div>
-                        </div>
-                        <div class="project">
-                            <div class="thumb">
-                                <img src="/assets/images/Projects/8.jpg" alt="">
-                            </div>
-                            <div class="description">
-                                <p class="name">H&M</p>
-                                <p class="tech">React</p>
-                            </div>
-                        </div> -->
-                    <!-- </div> -->
+
+            <div class="project">
+              <div class="thumb">
+                <img
+                  id="second"
+                  src="./assets/images/Projects/conekta-panel.png"
+                  alt=""
+                />
+              </div>
+              <div class="description">
+                <p class="name">
+                  <a
+                    href="https://identity.conekta.com/Account/Register?client_id=f508bb85-1188-4c08-beb3-a076e1d41f9e"
+                    >Conekta Panel</a
+                  >
+                </p>
+                <div class="logo-container">
+                  <span class="react"
+                    ><i style="font-size: 2em" class="fab fa-react"></i
+                  ></span>
                 </div>
+              </div>
             </div>
-        </section>
+            <div class="project">
+              <div class="thumb">
+                <img
+                  id="third"
+                  src="./assets/images/Projects/mi-monte.png"
+                  alt=""
+                />
+              </div>
+              <div class="description">
+                <p class="name">
+                  <a href="ttps://mimonte.montepiedad.com.mx/login"
+                    >Nacional Monte de Piedad - Mi Monte</a
+                  >
+                </p>
+                <div class="logo-container">
+                  <span class="react"
+                    ><i style="font-size: 2em" class="fab fa-react"></i
+                  ></span>
+                </div>
+              </div>
+            </div>
+            <div class="project">
+              <div class="thumb">
+                <img
+                  id="fourth"
+                  src="./assets/images/Projects/credi-movil.png"
+                  alt=""
+                />
+              </div>
+              <div class="description">
+                <p class="name">
+                  <a
+                    href="https://play.google.com/store/apps/details?id=mx.com.credicapital.bancamovil&hl=en_SG"
+                    >CrediCapital</a
+                  >
+                </p>
+                <div class="logo-container">
+                  <span class="react"
+                    ><i style="font-size: 2em" class="fab fa-react"></i
+                  ></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project">
+              <div class="thumb">
+                <img
+                  id="fifth"
+                  src="./assets/images/Projects/spa1.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="description">
+                <p class="name">
+                  <a href="https://edgarmc100.github.io/restaurant-spa/"
+                    >The national restaurant</a
+                  >
+                </p>
+                <div class="logo-container">
+                  <img
+                    class="react-native"
+                    src="./assets/images/logos/html5.png"
+                    alt=""
+                  />
+                  <img
+                    class="react-native"
+                    src="./assets/images/logos/css.png"
+                    style="width: 75px"
+                    alt=""
+                  />
+                  <img
+                    class="react-native"
+                    src="./assets/images/logos/javascript.png"
+                    style="width: 105px"
+                    alt=""
+                  />
+                  <img
+                    class="react-native"
+                    src="./assets/images/logos/sass.png"
+                    style="width: 105px"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </section>
     <footer>
-        <section class="contact" id="contact">
-            <div class="container">
-                <h3 class="title">Contact</h3>
-                <form class="form" action="">
-                    <input type="text" placeholder="Name" name="name" required>
-                    <input type="email" placeholder="Email" name="email" required> 
-                    <textarea name="message" placeholder="Message"></textarea>
-                    <input class="bottom" type="submit" value="Send">
-                </form>
-            </div>
-        </section>
-        
-        <section class="social-networks">
-            <div class="container">
-                <a href="https://twitter.com/devpowermx" class="twitter"><i class="fab fa-twitter"></i></a>
-                <a href="https://www.facebook.com/Edgar.UbaldoMC" class="facebook"><i class="fab fa-facebook-f"></i></a>
-                <!-- <a href="#" class="youtube"><i class="fab fa-youtube"></i></a> -->
-                <a href="https://github.com/EdgarMC100" class="github"><i class="fab fa-github"></i></a>
-                <!-- <a href="#" class="twitch"><i class="fab fa-twitch"></i></a> -->
-                <a href="https://www.instagram.com/edgarmc100/" class="instagram"><i class="fab fa-instagram"></i></a>
-            </div>
-        </section>
+      <section class="contact" id="contact">
+        <div class="container">
+          <h3 class="title">Contact</h3>
+          <form class="form" action="">
+            <input type="text" placeholder="Name" name="name" required />
+            <input type="email" placeholder="Email" name="email" required />
+            <textarea name="message" placeholder="Message"></textarea>
+            <input class="bottom" type="submit" value="Send" />
+          </form>
+        </div>
+      </section>
+
+      <section class="social-networks">
+        <div class="container">
+          <a href="https://github.com/EdgarMC100" class="github"
+            ><i class="fab fa-github"></i
+          ></a>
+        </div>
+      </section>
     </footer>
-</body>
+  </body>
 </html>
